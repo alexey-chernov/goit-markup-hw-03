@@ -190,7 +190,8 @@ body {
   position: absolute;
   align-content: center;
   color: #212121;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
   font-family: Roboto;
   font-style: normal;
   font-size: 36px;
