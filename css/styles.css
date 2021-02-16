@@ -10,9 +10,11 @@ body {
 }
 
 .container {
+  height: 80px;
   width: 1600px;
   padding: 0 15px;
   margin: 0 auto;
+  box-sizing: inherit;
 }
 
 .header a {
@@ -40,6 +42,7 @@ body {
 
 .header-nav {
   align-items: center;
+  height: 80px;
 }
 
 .nav-list li {
@@ -75,11 +78,9 @@ body {
 /*-------------------*/
 
 .hero {
+  top: 80px;
+  height: 600px;
   background-color: #2f303a;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  padding-left: 452px;
-  padding-right: 452px;
 }
 
 .hero-title {
@@ -88,9 +89,10 @@ body {
   height: 120px;
   left: 50%;
   transform: translate(-50%, 0);
-  top: 200px;
-  font-weight: 696px;
-  font-size: 44px;
+  padding-top: 200px;
+  padding-bottom: 280px;
+  font-weight: 800px;
+  font-size: 48px;
   line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
@@ -103,6 +105,7 @@ body {
   position: absolute;
   width: 200px;
   height: 50px;
+  top: 430px;
   left: 50%;
   transform: translate(-50%, 0);
   color: #ffffff;
@@ -111,13 +114,16 @@ body {
   border-radius: 4px;
 }
 
-.features {
-  padding-top: 10px;
+.features-section {
+  padding-top: 94px;
   padding-bottom: 10px;
   padding-left: 215px;
   padding-right: 215px;
-  width: auto;
-  align-self: center;
+  text-align: start;
+}
+
+.features {
+  height: 101px;
   font-size: small;
   list-style-type: none;
   display: flex;
@@ -153,12 +159,16 @@ body {
   color: #757575;
 }
 
+.features-item {
+  width: 270px;
+}
+
 .ourworking {
   padding-top: 50px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
   padding-left: 215px;
   padding-right: 215px;
-  width: auto;
+  /*width: auto;*/
   align-content: center;
   align-tracks: normal;
   font-size: small;
@@ -167,14 +177,9 @@ body {
   margin-left: 30px;
 }
 
-.working-command-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .ourcommand {
   padding-top: 50px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
   padding-left: 215px;
   padding-right: 215px;
   width: auto;
@@ -187,6 +192,7 @@ body {
 }
 
 .working-command-title {
+  padding-top: 94px;
   position: absolute;
   align-content: center;
   color: #212121;
