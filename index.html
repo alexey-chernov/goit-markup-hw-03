@@ -31,11 +31,12 @@
   <body>
     <header>
       <div class="container">
-        <a class="logotype" href="./">
-          <span class="logotype-part1">Web</span
-          ><span class="logotype-part2">Studio</span>
-        </a>
         <nav class="header-nav">
+          <a class="logotype" href="./">
+            <span class="logotype-part1">Web</span
+            ><span class="logotype-part2">Studio</span>
+          </a>
+          <!-- Навігація на інші сторінки -->
           <ul class="nav-list">
             <li>
               <a href="./" class="nav-link current">Студия</a>
@@ -48,7 +49,7 @@
             </li>
           </ul>
           <!-- Контакти -->
-          <ul class="contacts-list">
+          <ul class="nav-list">
             <!-- contacts-list -->
             <li>
               <a href="info@devstudio.com">info@devstudio.com</a>
@@ -62,109 +63,107 @@
     </header>
 
     <!-- Шапка -->
-    <div class="hero">
-      <div class="hero-title">Эффективные решения для вашего бизнеса</div>
-      <button class="button-title">
-        <b>Заказать услугу</b>
-      </button>
-    </div>
+    <section class="hero">
+      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <form>
+        <button class="button-title">
+          <b>Заказать услугу</b>
+        </button>
+      </form>
+    </section>
 
     <!-- Особливості -->
-    <span>
+    <section>
       <ul class="features">
         <li>
-          <p class="features-names">Внимание к деталям</p>
-          <dipv class="features-text">
+          <h3 class="features-names">Внимание к деталям</h3>
+          <div class="features-text">
             Идейные соображения, а также начало повседневной работы по
             формированию позиции.
-          </p>
+          </div>
         </li>
         <li>
-          <p class="features-names">Пунктуальность</p>
-          <p class="features-text">
+          <h3 class="features-names">Пунктуальность</h3>
+          <div class="features-text">
             Задача организации, в особенности же рамки и место обучения кадров
             влечет за собой.
-          </p>
+          </div>
         </li>
         <li>
-          <p class="features-names">Планирование</p>
-          <p class="features-text">
+          <h3 class="features-names">Планирование</h3>
+          <div class="features-text">
             Равным образом консультация с широким активом в значительной степени
             обуславливает.
-          </p>
+          </div>
         </li>
         <li>
-          <p class="features-names">Современные технологии</p>
-          <p class="features-text">
+          <h3 class="features-names">Современные технологии</h3>
+          <div class="features-text">
             Значимость этих проблем настолько очевидна, что реализация плановых
             заданий.
-          </p>
+          </div>
         </li>
       </ul>
-    </span>
+    </section>
 
     <!-- Чим ми займаємось -->
-    <span>
-      <div class="working-command-section">
+    <section class=".working-command-section">
+      <div class="container">
         <h2 class="working-command-title">Чем мы занимаемся</h2>
-        <ul class="ourworking">
-          <li class="working-command-list">
-            <img
-              class="img-size"
-              src="./img/1.jpg"
-              alt="Разработка HTML страниц"
-            />
-          </li>
-          <li class="working-command-list">
-            <img
-              class="img-size"
-              src="./img/2.jpg"
-              alt="Разработка HTML страниц для мобильных телефонов"
-            />
-          </li>
-          <li class="working-command-list">
-            <img
-              class="img-size"
-              src="./img/3.jpg"
-              alt="Разработка HTML страниц для планшетов"
-            />
-          </li>
-        </ul>
       </div>
-    </span>
+      <ul class="ourworking">
+        <li class="working-command-list">
+          <img
+            class="img-size"
+            src="./img/1.jpg"
+            alt="Разработка HTML страниц"
+          />
+        </li>
+        <li class="working-command-list">
+          <img
+            class="img-size"
+            src="./img/2.jpg"
+            alt="Разработка HTML страниц для мобильных телефонов"
+          />
+        </li>
+        <li class="working-command-list">
+          <img
+            class="img-size"
+            src="./img/3.jpg"
+            alt="Разработка HTML страниц для планшетов"
+          />
+        </li>
+      </ul>
+    </section>
 
     <!-- Наша команда -->
-    <span>
-      <div class="working-command-section">
+    <section class=".working-command-section">
+      <div class="container">
         <h2 class="working-command-title">Наша комманда</h2>
-        <ul class="ourcommand">
-          <li class="working-command-list">
-            <img
-              class="img-size"
-              src="./img/Card1.jpg"
-              alt="Игорь Демьяненко"
-            />
-            <div class="ourcommand-names">Игорь Демьяненко</div>
-            <p class="ourcommand-profi">Product Designer</p>
-          </li>
-          <li class="working-command-list">
-            <img class="img-size" src="./img/Card2.jpg" alt="Ольга Репина" />
-            <div class="ourcommand-names">Ольга Репина</div>
-            <p class="ourcommand-profi">Frontend Developer</p>
-          </li>
-          <li class="working-command-list">
-            <img class="img-size" src="./img/Card3.jpg" alt="Николай Тарасов" />
-            <div class="ourcommand-names">Николай Тарасов</div>
-            <p class="ourcommand-profi">Marketing</p>
-          </li>
-          <li class="working-command-list">
-            <img class="img-size" src="./img/Card4.jpg" alt="Михаил Ермаков" />
-            <div class="ourcommand-names">Михаил Ермаков</div>
-            <p class="ourcommand-profi">UI Designer</p>
-          </li>
-        </ul>
       </div>
-    </span>
+      <ul class="ourcommand">
+        <li class="working-command-list">
+          <img class="img-size" src="./img/Card1.jpg" alt="Игорь Демьяненко" />
+          <div class="ourcommand-names">Игорь Демьяненко</div>
+          <p class="ourcommand-profi">Product Designer</p>
+        </li>
+        <li class="working-command-list">
+          <img class="img-size" src="./img/Card2.jpg" alt="Ольга Репина" />
+          <div class="ourcommand-names">Ольга Репина</div>
+          <p class="ourcommand-profi">Frontend Developer</p>
+        </li>
+        <li class="working-command-list">
+          <img class="img-size" src="./img/Card3.jpg" alt="Николай Тарасов" />
+          <div class="ourcommand-names">Николай Тарасов</div>
+          <p class="ourcommand-profi">Marketing</p>
+        </li>
+        <li class="working-command-list">
+          <img class="img-size" src="./img/Card4.jpg" alt="Михаил Ермаков" />
+          <div class="ourcommand-names">Михаил Ермаков</div>
+          <p class="ourcommand-profi">UI Designer</p>
+        </li>
+      </ul>
+    </section>
 
     <footer>
       <div class="thisfooter">
