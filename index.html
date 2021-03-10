@@ -29,38 +29,39 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <nav class="header-nav">
+    <header class="page-header">
+      <div class="container header">
+        <!--Навігація-->
+        <nav class="nav">
           <a class="logotype" href="./">
             <span class="logotype-part1">Web</span
             ><span class="logotype-part2">Studio</span>
           </a>
-          <!-- Навігація на інші сторінки -->
-          <ul class="nav-list">
+
+          <ul class="nav-items">
             <li>
-              <a href="./" class="nav-link current">Студия</a>
+              <a class="nav-item" href="./index.html">Студия</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="nav-link">Портфолио</a>
-            </li>
-            <li>
-              <a href="./" class="nav-link">Контакты</a>
-            </li>
-          </ul>
-          <!-- Контакти -->
-          <ul class="contacts-list">
-            <li>
-              <a href="info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-              <a href="tel:380961111111">+38 096 111 11 11</a>
-            </li>
+            <li><a class="nav-item" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="nav-item" href="#Contacts">Контакты</a></li>
           </ul>
         </nav>
+
+        <ul class="header-contacts">
+          <li lang="en">
+            <a class="header-contact" href="mailto:info@devstudio.com">              
+              info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="header-contact" href="tel:+380961111111">             
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
-
+    
     <!-- Шапка -->
     <section class="hero">
       <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
@@ -69,92 +70,82 @@
       </button>
     </section>
 
-    <!-- Особливості -->
-    <div>
-      <ul class="features">
-        <li>
-          <h3 class="features-names">Внимание к деталям</h3>
-          <div class="features-text">
-            Идейные соображения, а также начало повседневной работы по
-            формированию позиции.
-          </div>
-        </li>
-        <li>
-          <h3 class="features-names">Пунктуальность</h3>
-          <div class="features-text">
-            Задача организации, в особенности же рамки и место обучения кадров
-            влечет за собой.
-          </div>
-        </li>
-        <li>
-          <h3 class="features-names">Планирование</h3>
-          <div class="features-text">
-            Равным образом консультация с широким активом в значительной степени
-            обуславливает.
-          </div>
-        </li>
-        <li>
-          <h3 class="features-names">Современные технологии</h3>
-          <div class="features-text">
-            Значимость этих проблем настолько очевидна, что реализация плановых
-            заданий.
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Чим ми займаємось -->
-    <div class=".working-command-section">
-      <div>
-        <h2 class="working-command-title">Чем мы занимаемся</h2>
+    <section>
+      <!-- Особливості -->
+      <div class="working-command-section">
+        <ul class="features">
+          <li>
+            <h3 class="features-names">Внимание к деталям</h3>
+            <div class="features-text">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </div>
+          </li>
+          <li>
+            <h3 class="features-names">Пунктуальность</h3>
+            <div class="features-text">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </div>
+          </li>
+          <li>
+            <h3 class="features-names">Планирование</h3>
+            <div class="features-text">
+              Равным образом консультация с широким активом в значительной степени
+              обуславливает.
+            </div>
+          </li>
+          <li>
+            <h3 class="features-names">Современные технологии</h3>
+            <div class="features-text">
+              Значимость этих проблем настолько очевидна, что реализация плановых
+              заданий.
+            </div>
+          </li>
+        </ul>
       </div>
-      <ul class="ourworking">
-        <li class="working-command-list">
-          <img
-            class="img-size"
-            src="./img/1.jpg"
-            alt="Разработка HTML страниц"
-          />
-        </li>
-        <li class="working-command-list">
-          <img
-            class="img-size"
-            src="./img/2.jpg"
-            alt="Разработка HTML страниц для мобильных телефонов"
-          />
-        </li>
-        <li class="working-command-list">
-          <img
-            class="img-size"
-            src="./img/3.jpg"
-            alt="Разработка HTML страниц для планшетов"
-          />
-        </li>
-      </ul>
-    </div>
+        
+      <!-- Чим ми займаємось -->
+      <div class="working-command-section">
+        <div>
+          <h2 class="working-command-title">Чем мы занимаемся</h2>
+        </div>
+        <ul class="ourworking">
+          <li class="ourworking-card">
+            <img class="img-size" src="./img/1.jpg" alt="Разработка HTML страниц" />
+          </li>
+          <li class="ourworking-card">
+            <img class="img-size" src="./img/2.jpg" alt="Разработка HTML страниц для мобильных телефонов" />
+          </li>
+          <li class="ourworking-card">
+            <img class="img-size" src="./img/3.jpg" alt="Разработка HTML страниц для планшетов" />
+          </li>
+        </ul>
+      </div>
+    </section>
 
     <!-- Наша команда -->
-    <div class=".working-command-section">
+    <div class="working-command-section">
       <div>
         <h2 class="working-command-title">Наша комманда</h2>
       </div>
       <ul class="ourcommand">
-        <li class="working-command-list">
+        <li class="ourcommand-card">
           <img class="img-size" src="./img/Card1.jpg" alt="Игорь Демьяненко" />
           <div class="ourcommand-names">Игорь Демьяненко</div>
           <p class="ourcommand-profi">Product Designer</p>
         </li>
-        <li class="working-command-list">
+        <li class="ourcommand-card">
           <img class="img-size" src="./img/Card2.jpg" alt="Ольга Репина" />
           <div class="ourcommand-names">Ольга Репина</div>
           <p class="ourcommand-profi">Frontend Developer</p>
         </li>
-        <li class="working-command-list">
+        <li class="ourcommand-card">
           <img class="img-size" src="./img/Card3.jpg" alt="Николай Тарасов" />
           <div class="ourcommand-names">Николай Тарасов</div>
           <p class="ourcommand-profi">Marketing</p>
         </li>
-        <li class="working-command-list">
+        <li class="ourcommand-card">
           <img class="img-size" src="./img/Card4.jpg" alt="Михаил Ермаков" />
           <div class="ourcommand-names">Михаил Ермаков</div>
           <p class="ourcommand-profi">UI Designer</p>
@@ -163,24 +154,28 @@
     </div>
 
     <footer>
-      <div class="thisfooter">
-        <a class="logotype" href="./">
-          <span class="logotype-part1">Web</span
-          ><span class="logotype-part2">Studio</span>
-        </a>
-        <address class="address-block">
-          <p>г. Киев, пр-т Леси Украинки, 26</p>
-          <p>
-            <a class="link-email-footer" href="info@example.com"
-              >info@example.com</a
-            >
-          </p>
-          <p>
-            <a class="link-tel-footer" href="tel:380961111111"
-              >+38 096 111 11 11</a
-            >
-          </p>
-        </address>
+      <div class="main-footer">
+        <div class="footer">
+          <div id="Contacts" class="thisfooter">
+            <a class="logotype" href="./">
+              <span class="logotype-part1">Web</span
+              ><span class="logotype-part2">Studio</span>
+            </a>
+            <address class="address-block">
+              <p>г. Киев, пр-т Леси Украинки, 26</p>
+              <p>
+                <a class="link-email-footer" href="info@example.com"
+                  >info@example.com</a
+                >
+              </p>
+              <p>
+                <a class="link-tel-footer" href="tel:380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </p>
+            </address>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
